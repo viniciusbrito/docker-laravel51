@@ -14,6 +14,10 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         Commands\Inspire::class,
+        Commands\DockerUp::class,
+        Commands\DockerKill::class,
+        Commands\DockerRm::class,
+        Commands\DockerList::class,
     ];
 
     /**
