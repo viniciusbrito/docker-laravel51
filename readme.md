@@ -25,7 +25,7 @@ $ php artisan key:generate
 Then rum the following command to start the containers
 
 ```sh
-$ docker-compose up -d
+$ php artisan docker:up
 ```
 
 Grant permission to nginx
@@ -40,13 +40,18 @@ Access the app
 To stop the containers
 
 ```sh
-$ docker-compose kill
+$ php artisan docker:kill
 ```
 
 To remove the containers
 
 ```sh
-$ docker-compose rm
+$ php artisan docker:remove
+```
+
+To list containers running
+```sh
+$ php artisan docker:list
 ```
 
 This project is based on this other [project](https://github.com/kyleferguson/laravel-with-docker-example)
