@@ -19,6 +19,7 @@ services:
             - ./:/var/www
         links:
             - database
+        #uncomment this for use Redis as cache#    - cache 
         environment:
             - "DB_PORT=3306"
             - "DB_HOST=database"
@@ -31,3 +32,9 @@ services:
             - "MYSQL_DATABASE=dockerApp"
         ports:
             - "33061:3306"
+
+##If Redis as cache is necessary uncomment the follow lines
+    # cache:
+    #     image: redis:3.0
+    #     ports:
+    #         - "63791:6379"

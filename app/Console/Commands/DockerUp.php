@@ -44,7 +44,6 @@ class DockerUp extends Command
         else {
             $this->info('Starting containers');
             shell_exec('docker-compose up -d');
-            $this->info('All containers started');
         }        
     }
 }

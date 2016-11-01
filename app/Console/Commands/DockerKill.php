@@ -44,7 +44,6 @@ class DockerKill extends Command
         else {
             $this->info('Killing containers');
             shell_exec('docker-compose kill');
-            $this->info('All containers killed');
         }        
     }
 }

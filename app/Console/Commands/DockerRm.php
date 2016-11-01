@@ -44,7 +44,6 @@ class DockerRm extends Command
         else {
             $this->info('Removing containers');
             shell_exec('docker-compose rm -f');
-            $this->info('Containers Removed');
         }
     }
 }
